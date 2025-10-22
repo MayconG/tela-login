@@ -11,10 +11,11 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: var(--cor3);
+    background-color: rgb(230, 228, 228);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
@@ -24,30 +25,31 @@ main {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #D9D9D9;
+    background-color: white;
     width: 350px;
     height: 500px;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
 }
 
 #sec-color {
     background-color: var(--cor1);
     height: 120px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 #sec-form {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #D9D9D9;
-    height: 400px;
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 h1 {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 3em;
     color: var(--cor1);
     text-shadow: 1px 1px 3px #516da698;
@@ -77,11 +79,11 @@ label {
 }
 
 .input-log {
-    padding: 10px 0px;
+    padding: 9px 0px;
     width: 100%;
     background-color: white;
     border-radius: 0px 3px 3px 0px;
-    border: none;
+    border: 1px solid var(--cor3);
 }
 
 .botao {
@@ -89,7 +91,7 @@ label {
     width: 100%;
     background-color: var(--cor1);
     color: white;
-    border: none;
+    border: 1px solid var(--cor1);
     border-radius: 3px;
     font-size: 1em;
     font-weight: bolder;
@@ -99,4 +101,5 @@ label {
     background-color: white;
     color: var(--cor1);
     transition: .5s;
+    border: 1px solid var(--cor3);
 }
