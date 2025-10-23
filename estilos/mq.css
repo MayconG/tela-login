@@ -3,6 +3,7 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
     main {
         display: flex;
+        flex-direction: row;
         width: 700px;
         height: 450px;
         border-radius: 0px;
@@ -13,13 +14,20 @@
         width: 100%;
     }
 
+    form {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
     #sec-form div {
         justify-content: center;
+        width: 300px;
     }
 
     #sec-color {
         height: 100%;
-        width: 300px;
+        width: 250px;
         border-radius: 0px 50px 50px 0px;
     }
 }
@@ -39,8 +47,16 @@
         width: 100%;
     }
 
+    form {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 300px;
+    }
+
     #sec-form div {
         justify-content: center;
+        width: 100%;
     }
     
     #sec-color {
